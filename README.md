@@ -1,17 +1,40 @@
-#OBJETIVO
+Cofrinho de Moedas em Java
+Objetivo
 
- O trabalho consiste em implementar um pequeno sistema que emula um "Cofrinho
-de moedas" em Java. Crie um menu em que é oferecido ao usuário:<br>
- Adicionar moedas de diferentes valores e países em seu cofrinho<br>
- Remover moedas específicas do cofrinho.<br>
- Listar todas as moedas que estão dentro do cofrinho<br>
- Calcular quanto dinheiro existe no cofrinho convertido para Real<br>
-O objetivo principal do trabalho é avaliar o bom uso do conceito de herança e
-polimorfismo. O projeto deve possuir uma classe Principal além das classes descritas no
-diagrama UML abaixo.<br>
-A classe Cofrinho deve possuir como atributo uma coleção de Moedas, que por sua
-vez é uma classe mãe abstrata de outras classes específicas de Dolar, Euro, Real, etc... A
-coleção de Moedas pode ser implementada utilizando um ArrayList, ou qualquer outra
-estrutura de dados que julgue pertinente.<br>
-Demais detalhes de implementação ficam a cargo do aluno que pode desenvolver
-também classes extras ou adicionar métodos e atributos conforme julgar necessário.
+Este projeto consiste na implementação de um sistema simples que simula um cofrinho de moedas em Java.
+
+O sistema permite ao usuário:
+
+Adicionar moedas de diferentes valores e países
+
+Remover moedas específicas do cofrinho
+
+Listar todas as moedas armazenadas
+
+Calcular o valor total convertido para Real (BRL)
+
+Propósito
+
+O principal objetivo deste trabalho é aplicar conceitos de Programação Orientada a Objetos, especialmente:
+
+Herança
+
+Polimorfismo
+
+Abstração
+
+Estrutura do Projeto
+
+O sistema é composto pelas seguintes classes:
+
+Principal: responsável por executar o programa e exibir o menu
+
+Cofrinho: gerencia a coleção de moedas e as operações do sistema
+
+Moeda (abstrata): classe base para os diferentes tipos de moeda
+
+Classes derivadas: como Dolar, Euro e Real
+
+Estrutura de Dados
+
+A classe Cofrinho utiliza uma coleção de moedas, que pode ser implementada com ArrayList ou outra estrutura de dados apropriada.
