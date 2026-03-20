@@ -4,22 +4,32 @@ import java.util.ArrayList;
 
 public class Cofrinho {
 
-    private ArrayList<Double> moeda = new ArrayList<>();
+    // Vai listar e guardar a Classe Moeda
+    private ArrayList<Moeda> listaMoedas = new ArrayList<>();
 
-    public void adicionar(double valor) {
-        moeda.add(valor);
-        System.out.println("Moeda de " + valor + " adicionada!");
+    public void adicionar(Moeda moeda) {
+        listaMoedas.add(moeda);
+        System.out.println("Moeda de " + moeda + " adicionada!");
     }
 
-    public void remover(double valor){
-        moeda.remove(valor);
-        System.out.println("Moeda de " + valor + " removida!");
+    public void remover(Moeda moeda){
+        listaMoedas.remove(moeda);
+        System.out.println("Moeda de " + moeda + " removida!");
     }
 
     public void listagemMoedas(){
-        System.out.println(moeda);
+        //Vai mostrar as informacoes das moedas
+        for (Moeda m : listaMoedas){
+            m.info();
+        }
     }
 
-
+    public double totalConvertido() {
+        double total = 0;
+        for ( Moeda m : listaMoedas) {
+             total += m.converter();// O polimorfismo acontece aqui!
+        }
+        return total;
+    }
 
 }
