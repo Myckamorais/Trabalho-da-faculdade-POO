@@ -24,7 +24,8 @@ public class Real extends Moeda {
 
     @Override
     public boolean equals(Object obj) {
-        // Se for o mesmo endereço de memória, é igual
+
+        // Se for o mesmo endereço de memória é igual
         if (this == obj) return true;
         // Se o objeto comparado for nulo ou de classe diferente, é diferente
         if (obj == null || getClass() != obj.getClass()) return false;

@@ -32,6 +32,7 @@ public class Program {
                     System.out.print("Digite o valor: ");
                     double valorAdd = sc.nextDouble();
 
+                    //Escolhe a opção e já adiciona a moeda e cria o objeto
                     if (tipoMoeda == 1) cofrinho.adicionar(new Real(valorAdd));
                     else if (tipoMoeda == 2) cofrinho.adicionar(new Dolar(valorAdd));
                     else if (tipoMoeda == 3) cofrinho.adicionar(new Euro(valorAdd));

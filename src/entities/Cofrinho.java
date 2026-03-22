@@ -35,7 +35,7 @@ public class Cofrinho {
     public double totalConvertido() {
         double total = 0;
         for ( Moeda m : listaMoedas) {
-             total += m.converter();// O polimorfismo acontece aqui!
+             total += m.converter();
         }
         return total;
     }
